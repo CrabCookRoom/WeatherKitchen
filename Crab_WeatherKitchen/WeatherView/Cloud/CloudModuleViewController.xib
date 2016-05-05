@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CloudModuleViewController">
+            <connections>
+                <outlet property="cloudElementView" destination="KQ4-kn-o0f" id="fxI-Aw-U0w"/>
+                <outlet property="cloudyBg" destination="7Fa-LD-r5c" id="YOV-zD-C7v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudBgImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Fa-LD-r5c">
+                    <rect key="frame" x="-500" y="-100" width="1600" height="700"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudElement.png" translatesAutoresizingMaskIntoConstraints="NO" id="KQ4-kn-o0f">
+                    <rect key="frame" x="0.0" y="0.0" width="1600" height="600"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KQ4-kn-o0f" secondAttribute="trailing" constant="-1000" id="5vr-4q-NRe"/>
+                <constraint firstItem="7Fa-LD-r5c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-100" id="DUV-PV-mGD"/>
+                <constraint firstItem="7Fa-LD-r5c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-500" id="RTO-Pe-YD0"/>
+                <constraint firstItem="KQ4-kn-o0f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TYz-NX-h9L"/>
+                <constraint firstAttribute="bottom" secondItem="KQ4-kn-o0f" secondAttribute="bottom" id="Xxl-Qy-p3C"/>
+                <constraint firstItem="KQ4-kn-o0f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eEf-1U-Shl"/>
+                <constraint firstAttribute="bottom" secondItem="7Fa-LD-r5c" secondAttribute="bottom" id="exf-ym-stL"/>
+                <constraint firstAttribute="trailing" secondItem="7Fa-LD-r5c" secondAttribute="trailing" constant="-500" id="yBN-Ky-NVC"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="cloudBgImage.png" width="1495" height="800"/>
+        <image name="cloudElement.png" width="1495" height="800"/>
+    </resources>
+</document>

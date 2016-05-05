@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SfH-bn-tc3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="a4M-vg-bv9" kind="embed" id="8Ul-bY-EoD"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SfH-bn-tc3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="3If-7G-CjO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SfH-bn-tc3" secondAttribute="trailing" constant="-20" id="AKi-lK-VK8"/>
+                            <constraint firstItem="SfH-bn-tc3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="AWf-Yl-CaA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SfH-bn-tc3" secondAttribute="bottom" id="D9h-ee-33N"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="392" y="335"/>
+        </scene>
+        <!--Weather View Manager-->
+        <scene sceneID="4Il-e5-eHm">
+            <objects>
+                <viewController id="a4M-vg-bv9" customClass="WeatherViewManager" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6w-gF-qPr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWt-o9-wMK">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="keZ-I9-W4F"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Sunny" id="SeG-pw-m5X">
+                                        <connections>
+                                            <action selector="sunnyTapped:" destination="a4M-vg-bv9" id="Kha-AI-3X9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Cloudy" id="sAZ-eW-ifY">
+                                        <connections>
+                                            <action selector="cloudTapped:" destination="a4M-vg-bv9" id="bH1-KU-t3l"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Rainny" id="KuC-tG-Trs">
+                                        <connections>
+                                            <action selector="rainTapped:" destination="a4M-vg-bv9" id="dWk-mo-REj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Hazz" id="QkC-ag-xbd">
+                                        <connections>
+                                            <action selector="hazeTapped:" destination="a4M-vg-bv9" id="TP6-wr-q1b"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FWt-o9-wMK" firstAttribute="bottom" secondItem="v6w-gF-qPr" secondAttribute="bottomMargin" id="82C-8C-DeW"/>
+                            <constraint firstItem="FWt-o9-wMK" firstAttribute="leading" secondItem="v6w-gF-qPr" secondAttribute="leading" id="e2t-gw-6VS"/>
+                            <constraint firstAttribute="bottom" secondItem="FWt-o9-wMK" secondAttribute="bottom" id="gVh-b2-m8v"/>
+                            <constraint firstAttribute="trailing" secondItem="FWt-o9-wMK" secondAttribute="trailing" id="h2Y-kn-2LJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FWt-o9-wMK" secondAttribute="trailing" constant="-20" id="tbS-0z-tpP"/>
+                            <constraint firstItem="FWt-o9-wMK" firstAttribute="leading" secondItem="v6w-gF-qPr" secondAttribute="leadingMargin" constant="-20" id="z8d-mb-zIr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHz-Ms-STW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="222"/>
+        </scene>
+    </scenes>
+</document>

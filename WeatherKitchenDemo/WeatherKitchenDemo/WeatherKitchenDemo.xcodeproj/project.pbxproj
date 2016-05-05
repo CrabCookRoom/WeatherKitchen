@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4702CAA21CDB98B200DFDE2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CAA11CDB98B200DFDE2C /* main.m */; };
+		4702CAA51CDB98B200DFDE2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CAA41CDB98B200DFDE2C /* AppDelegate.m */; };
+		4702CAA81CDB98B200DFDE2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CAA71CDB98B200DFDE2C /* ViewController.m */; };
+		4702CAAB1CDB98B200DFDE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4702CAA91CDB98B200DFDE2C /* Main.storyboard */; };
+		4702CAAD1CDB98B200DFDE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4702CAAC1CDB98B200DFDE2C /* Assets.xcassets */; };
+		4702CAB01CDB98B200DFDE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4702CAAE1CDB98B200DFDE2C /* LaunchScreen.storyboard */; };
+		4702CB281CDB9E1100DFDE2C /* WeatherViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CAFE1CDB9E1100DFDE2C /* WeatherViewManager.m */; };
+		4702CB291CDB9E1100DFDE2C /* cleanWhiteRain.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB001CDB9E1100DFDE2C /* cleanWhiteRain.png */; };
+		4702CB2A1CDB9E1100DFDE2C /* cloudBgImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB011CDB9E1100DFDE2C /* cloudBgImage.png */; };
+		4702CB2B1CDB9E1100DFDE2C /* cloudElement.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB021CDB9E1100DFDE2C /* cloudElement.png */; };
+		4702CB2C1CDB9E1100DFDE2C /* hazeBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB031CDB9E1100DFDE2C /* hazeBg.png */; };
+		4702CB2D1CDB9E1100DFDE2C /* hazePoint.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB041CDB9E1100DFDE2C /* hazePoint.png */; };
+		4702CB2E1CDB9E1100DFDE2C /* rainBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB051CDB9E1100DFDE2C /* rainBg.png */; };
+		4702CB2F1CDB9E1100DFDE2C /* rainFix.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB061CDB9E1100DFDE2C /* rainFix.png */; };
+		4702CB301CDB9E1100DFDE2C /* rainLargeBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB071CDB9E1100DFDE2C /* rainLargeBg.png */; };
+		4702CB311CDB9E1100DFDE2C /* rainWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB081CDB9E1100DFDE2C /* rainWhite.png */; };
+		4702CB321CDB9E1100DFDE2C /* snowDay.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB091CDB9E1100DFDE2C /* snowDay.png */; };
+		4702CB331CDB9E1100DFDE2C /* sunLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB0A1CDB9E1100DFDE2C /* sunLight.png */; };
+		4702CB341CDB9E1100DFDE2C /* sunnyBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB0B1CDB9E1100DFDE2C /* sunnyBg.png */; };
+		4702CB351CDB9E1100DFDE2C /* sunnyCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB0C1CDB9E1100DFDE2C /* sunnyCloud.png */; };
+		4702CB361CDB9E1100DFDE2C /* CAEmitterLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CB0F1CDB9E1100DFDE2C /* CAEmitterLayerView.m */; };
+		4702CB371CDB9E1100DFDE2C /* CloudModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CB121CDB9E1100DFDE2C /* CloudModuleViewController.m */; };
+		4702CB381CDB9E1100DFDE2C /* CloudModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB131CDB9E1100DFDE2C /* CloudModuleViewController.xib */; };
+		4702CB391CDB9E1100DFDE2C /* HazeModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CB161CDB9E1100DFDE2C /* HazeModuleViewController.m */; };
+		4702CB3A1CDB9E1100DFDE2C /* HazeModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB171CDB9E1100DFDE2C /* HazeModuleViewController.xib */; };
+		4702CB3B1CDB9E1100DFDE2C /* HazeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CB191CDB9E1100DFDE2C /* HazeView.m */; };
+		4702CB3C1CDB9E1100DFDE2C /* RainModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CB1C1CDB9E1100DFDE2C /* RainModuleViewController.m */; };
+		4702CB3D1CDB9E1100DFDE2C /* RainModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB1D1CDB9E1100DFDE2C /* RainModuleViewController.xib */; };
+		4702CB3E1CDB9E1100DFDE2C /* RainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CB1F1CDB9E1100DFDE2C /* RainView.m */; };
+		4702CB3F1CDB9E1100DFDE2C /* SnowModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CB221CDB9E1100DFDE2C /* SnowModuleViewController.m */; };
+		4702CB401CDB9E1100DFDE2C /* SnowModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB231CDB9E1100DFDE2C /* SnowModuleViewController.xib */; };
+		4702CB411CDB9E1100DFDE2C /* SunnyModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702CB261CDB9E1100DFDE2C /* SunnyModuleViewController.m */; };
+		4702CB421CDB9E1100DFDE2C /* SunnyModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4702CB271CDB9E1100DFDE2C /* SunnyModuleViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4702CA9D1CDB98B200DFDE2C /* WeatherKitchenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherKitchenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4702CAA11CDB98B200DFDE2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4702CAA31CDB98B200DFDE2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4702CAA41CDB98B200DFDE2C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4702CAA61CDB98B200DFDE2C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4702CAA71CDB98B200DFDE2C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4702CAAA1CDB98B200DFDE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4702CAAC1CDB98B200DFDE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4702CAAF1CDB98B200DFDE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4702CAB11CDB98B200DFDE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4702CAFD1CDB9E1100DFDE2C /* WeatherViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherViewManager.h; path = ../../../Crab_WeatherKitchen/WeatherViewManager.h; sourceTree = "<group>"; };
+		4702CAFE1CDB9E1100DFDE2C /* WeatherViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherViewManager.m; path = ../../../Crab_WeatherKitchen/WeatherViewManager.m; sourceTree = "<group>"; };
+		4702CB001CDB9E1100DFDE2C /* cleanWhiteRain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cleanWhiteRain.png; sourceTree = "<group>"; };
+		4702CB011CDB9E1100DFDE2C /* cloudBgImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudBgImage.png; sourceTree = "<group>"; };
+		4702CB021CDB9E1100DFDE2C /* cloudElement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudElement.png; sourceTree = "<group>"; };
+		4702CB031CDB9E1100DFDE2C /* hazeBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hazeBg.png; sourceTree = "<group>"; };
+		4702CB041CDB9E1100DFDE2C /* hazePoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hazePoint.png; sourceTree = "<group>"; };
+		4702CB051CDB9E1100DFDE2C /* rainBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainBg.png; sourceTree = "<group>"; };
+		4702CB061CDB9E1100DFDE2C /* rainFix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainFix.png; sourceTree = "<group>"; };
+		4702CB071CDB9E1100DFDE2C /* rainLargeBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainLargeBg.png; sourceTree = "<group>"; };
+		4702CB081CDB9E1100DFDE2C /* rainWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainWhite.png; sourceTree = "<group>"; };
+		4702CB091CDB9E1100DFDE2C /* snowDay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snowDay.png; sourceTree = "<group>"; };
+		4702CB0A1CDB9E1100DFDE2C /* sunLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunLight.png; sourceTree = "<group>"; };
+		4702CB0B1CDB9E1100DFDE2C /* sunnyBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunnyBg.png; sourceTree = "<group>"; };
+		4702CB0C1CDB9E1100DFDE2C /* sunnyCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunnyCloud.png; sourceTree = "<group>"; };
+		4702CB0E1CDB9E1100DFDE2C /* CAEmitterLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerView.h; sourceTree = "<group>"; };
+		4702CB0F1CDB9E1100DFDE2C /* CAEmitterLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerView.m; sourceTree = "<group>"; };
+		4702CB111CDB9E1100DFDE2C /* CloudModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudModuleViewController.h; sourceTree = "<group>"; };
+		4702CB121CDB9E1100DFDE2C /* CloudModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudModuleViewController.m; sourceTree = "<group>"; };
+		4702CB131CDB9E1100DFDE2C /* CloudModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloudModuleViewController.xib; sourceTree = "<group>"; };
+		4702CB151CDB9E1100DFDE2C /* HazeModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HazeModuleViewController.h; sourceTree = "<group>"; };
+		4702CB161CDB9E1100DFDE2C /* HazeModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HazeModuleViewController.m; sourceTree = "<group>"; };
+		4702CB171CDB9E1100DFDE2C /* HazeModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HazeModuleViewController.xib; sourceTree = "<group>"; };
+		4702CB181CDB9E1100DFDE2C /* HazeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HazeView.h; sourceTree = "<group>"; };
+		4702CB191CDB9E1100DFDE2C /* HazeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HazeView.m; sourceTree = "<group>"; };
+		4702CB1B1CDB9E1100DFDE2C /* RainModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainModuleViewController.h; sourceTree = "<group>"; };
+		4702CB1C1CDB9E1100DFDE2C /* RainModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainModuleViewController.m; sourceTree = "<group>"; };
+		4702CB1D1CDB9E1100DFDE2C /* RainModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RainModuleViewController.xib; sourceTree = "<group>"; };
+		4702CB1E1CDB9E1100DFDE2C /* RainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainView.h; sourceTree = "<group>"; };
+		4702CB1F1CDB9E1100DFDE2C /* RainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainView.m; sourceTree = "<group>"; };
+		4702CB211CDB9E1100DFDE2C /* SnowModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnowModuleViewController.h; sourceTree = "<group>"; };
+		4702CB221CDB9E1100DFDE2C /* SnowModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnowModuleViewController.m; sourceTree = "<group>"; };
+		4702CB231CDB9E1100DFDE2C /* SnowModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SnowModuleViewController.xib; sourceTree = "<group>"; };
+		4702CB251CDB9E1100DFDE2C /* SunnyModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunnyModuleViewController.h; sourceTree = "<group>"; };
+		4702CB261CDB9E1100DFDE2C /* SunnyModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunnyModuleViewController.m; sourceTree = "<group>"; };
+		4702CB271CDB9E1100DFDE2C /* SunnyModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SunnyModuleViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4702CA9A1CDB98B200DFDE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4702CA941CDB98B200DFDE2C = {
+			isa = PBXGroup;
+			children = (
+				4702CA9F1CDB98B200DFDE2C /* WeatherKitchenDemo */,
+				4702CA9E1CDB98B200DFDE2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4702CA9E1CDB98B200DFDE2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4702CA9D1CDB98B200DFDE2C /* WeatherKitchenDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4702CA9F1CDB98B200DFDE2C /* WeatherKitchenDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4702CAFD1CDB9E1100DFDE2C /* WeatherViewManager.h */,
+				4702CAFE1CDB9E1100DFDE2C /* WeatherViewManager.m */,
+				4702CAFF1CDB9E1100DFDE2C /* ImageSources */,
+				4702CB0D1CDB9E1100DFDE2C /* WeatherView */,
+				4702CAA31CDB98B200DFDE2C /* AppDelegate.h */,
+				4702CAA41CDB98B200DFDE2C /* AppDelegate.m */,
+				4702CAA61CDB98B200DFDE2C /* ViewController.h */,
+				4702CAA71CDB98B200DFDE2C /* ViewController.m */,
+				4702CAA91CDB98B200DFDE2C /* Main.storyboard */,
+				4702CAAC1CDB98B200DFDE2C /* Assets.xcassets */,
+				4702CAAE1CDB98B200DFDE2C /* LaunchScreen.storyboard */,
+				4702CAB11CDB98B200DFDE2C /* Info.plist */,
+				4702CAA01CDB98B200DFDE2C /* Supporting Files */,
+			);
+			path = WeatherKitchenDemo;
+			sourceTree = "<group>";
+		};
+		4702CAA01CDB98B200DFDE2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4702CAA11CDB98B200DFDE2C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4702CAFF1CDB9E1100DFDE2C /* ImageSources */ = {
+			isa = PBXGroup;
+			children = (
+				4702CB001CDB9E1100DFDE2C /* cleanWhiteRain.png */,
+				4702CB011CDB9E1100DFDE2C /* cloudBgImage.png */,
+				4702CB021CDB9E1100DFDE2C /* cloudElement.png */,
+				4702CB031CDB9E1100DFDE2C /* hazeBg.png */,
+				4702CB041CDB9E1100DFDE2C /* hazePoint.png */,
+				4702CB051CDB9E1100DFDE2C /* rainBg.png */,
+				4702CB061CDB9E1100DFDE2C /* rainFix.png */,
+				4702CB071CDB9E1100DFDE2C /* rainLargeBg.png */,
+				4702CB081CDB9E1100DFDE2C /* rainWhite.png */,
+				4702CB091CDB9E1100DFDE2C /* snowDay.png */,
+				4702CB0A1CDB9E1100DFDE2C /* sunLight.png */,
+				4702CB0B1CDB9E1100DFDE2C /* sunnyBg.png */,
+				4702CB0C1CDB9E1100DFDE2C /* sunnyCloud.png */,
+			);
+			name = ImageSources;
+			path = ../../../Crab_WeatherKitchen/ImageSources;
+			sourceTree = "<group>";
+		};
+		4702CB0D1CDB9E1100DFDE2C /* WeatherView */ = {
+			isa = PBXGroup;
+			children = (
+				4702CB0E1CDB9E1100DFDE2C /* CAEmitterLayerView.h */,
+				4702CB0F1CDB9E1100DFDE2C /* CAEmitterLayerView.m */,
+				4702CB101CDB9E1100DFDE2C /* Cloud */,
+				4702CB141CDB9E1100DFDE2C /* Haze */,
+				4702CB1A1CDB9E1100DFDE2C /* Rain */,
+				4702CB201CDB9E1100DFDE2C /* Snow */,
+				4702CB241CDB9E1100DFDE2C /* Sunny */,
+			);
+			name = WeatherView;
+			path = ../../../Crab_WeatherKitchen/WeatherView;
+			sourceTree = "<group>";
+		};
+		4702CB101CDB9E1100DFDE2C /* Cloud */ = {
+			isa = PBXGroup;
+			children = (
+				4702CB111CDB9E1100DFDE2C /* CloudModuleViewController.h */,
+				4702CB121CDB9E1100DFDE2C /* CloudModuleViewController.m */,
+				4702CB131CDB9E1100DFDE2C /* CloudModuleViewController.xib */,
+			);
+			path = Cloud;
+			sourceTree = "<group>";
+		};
+		4702CB141CDB9E1100DFDE2C /* Haze */ = {
+			isa = PBXGroup;
+			children = (
+				4702CB151CDB9E1100DFDE2C /* HazeModuleViewController.h */,
+				4702CB161CDB9E1100DFDE2C /* HazeModuleViewController.m */,
+				4702CB171CDB9E1100DFDE2C /* HazeModuleViewController.xib */,
+				4702CB181CDB9E1100DFDE2C /* HazeView.h */,
+				4702CB191CDB9E1100DFDE2C /* HazeView.m */,
+			);
+			path = Haze;
+			sourceTree = "<group>";
+		};
+		4702CB1A1CDB9E1100DFDE2C /* Rain */ = {
+			isa = PBXGroup;
+			children = (
+				4702CB1B1CDB9E1100DFDE2C /* RainModuleViewController.h */,
+				4702CB1C1CDB9E1100DFDE2C /* RainModuleViewController.m */,
+				4702CB1D1CDB9E1100DFDE2C /* RainModuleViewController.xib */,
+				4702CB1E1CDB9E1100DFDE2C /* RainView.h */,
+				4702CB1F1CDB9E1100DFDE2C /* RainView.m */,
+			);
+			path = Rain;
+			sourceTree = "<group>";
+		};
+		4702CB201CDB9E1100DFDE2C /* Snow */ = {
+			isa = PBXGroup;
+			children = (
+				4702CB211CDB9E1100DFDE2C /* SnowModuleViewController.h */,
+				4702CB221CDB9E1100DFDE2C /* SnowModuleViewController.m */,
+				4702CB231CDB9E1100DFDE2C /* SnowModuleViewController.xib */,
+			);
+			path = Snow;
+			sourceTree = "<group>";
+		};
+		4702CB241CDB9E1100DFDE2C /* Sunny */ = {
+			isa = PBXGroup;
+			children = (
+				4702CB251CDB9E1100DFDE2C /* SunnyModuleViewController.h */,
+				4702CB261CDB9E1100DFDE2C /* SunnyModuleViewController.m */,
+				4702CB271CDB9E1100DFDE2C /* SunnyModuleViewController.xib */,
+			);
+			path = Sunny;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4702CA9C1CDB98B200DFDE2C /* WeatherKitchenDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4702CAB41CDB98B200DFDE2C /* Build configuration list for PBXNativeTarget "WeatherKitchenDemo" */;
+			buildPhases = (
+				4702CA991CDB98B200DFDE2C /* Sources */,
+				4702CA9A1CDB98B200DFDE2C /* Frameworks */,
+				4702CA9B1CDB98B200DFDE2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeatherKitchenDemo;
+			productName = WeatherKitchenDemo;
+			productReference = 4702CA9D1CDB98B200DFDE2C /* WeatherKitchenDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4702CA951CDB98B200DFDE2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = HarlyKitchen;
+				TargetAttributes = {
+					4702CA9C1CDB98B200DFDE2C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 4702CA981CDB98B200DFDE2C /* Build configuration list for PBXProject "WeatherKitchenDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4702CA941CDB98B200DFDE2C;
+			productRefGroup = 4702CA9E1CDB98B200DFDE2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4702CA9C1CDB98B200DFDE2C /* WeatherKitchenDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4702CA9B1CDB98B200DFDE2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4702CB2E1CDB9E1100DFDE2C /* rainBg.png in Resources */,
+				4702CB401CDB9E1100DFDE2C /* SnowModuleViewController.xib in Resources */,
+				4702CB381CDB9E1100DFDE2C /* CloudModuleViewController.xib in Resources */,
+				4702CB421CDB9E1100DFDE2C /* SunnyModuleViewController.xib in Resources */,
+				4702CB2F1CDB9E1100DFDE2C /* rainFix.png in Resources */,
+				4702CB2A1CDB9E1100DFDE2C /* cloudBgImage.png in Resources */,
+				4702CB331CDB9E1100DFDE2C /* sunLight.png in Resources */,
+				4702CB301CDB9E1100DFDE2C /* rainLargeBg.png in Resources */,
+				4702CB351CDB9E1100DFDE2C /* sunnyCloud.png in Resources */,
+				4702CB341CDB9E1100DFDE2C /* sunnyBg.png in Resources */,
+				4702CB3A1CDB9E1100DFDE2C /* HazeModuleViewController.xib in Resources */,
+				4702CAB01CDB98B200DFDE2C /* LaunchScreen.storyboard in Resources */,
+				4702CB2D1CDB9E1100DFDE2C /* hazePoint.png in Resources */,
+				4702CB321CDB9E1100DFDE2C /* snowDay.png in Resources */,
+				4702CAAD1CDB98B200DFDE2C /* Assets.xcassets in Resources */,
+				4702CB3D1CDB9E1100DFDE2C /* RainModuleViewController.xib in Resources */,
+				4702CB311CDB9E1100DFDE2C /* rainWhite.png in Resources */,
+				4702CAAB1CDB98B200DFDE2C /* Main.storyboard in Resources */,
+				4702CB2B1CDB9E1100DFDE2C /* cloudElement.png in Resources */,
+				4702CB291CDB9E1100DFDE2C /* cleanWhiteRain.png in Resources */,
+				4702CB2C1CDB9E1100DFDE2C /* hazeBg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4702CA991CDB98B200DFDE2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4702CB3B1CDB9E1100DFDE2C /* HazeView.m in Sources */,
+				4702CB371CDB9E1100DFDE2C /* CloudModuleViewController.m in Sources */,
+				4702CB3C1CDB9E1100DFDE2C /* RainModuleViewController.m in Sources */,
+				4702CAA81CDB98B200DFDE2C /* ViewController.m in Sources */,
+				4702CB391CDB9E1100DFDE2C /* HazeModuleViewController.m in Sources */,
+				4702CB361CDB9E1100DFDE2C /* CAEmitterLayerView.m in Sources */,
+				4702CB3F1CDB9E1100DFDE2C /* SnowModuleViewController.m in Sources */,
+				4702CB281CDB9E1100DFDE2C /* WeatherViewManager.m in Sources */,
+				4702CB411CDB9E1100DFDE2C /* SunnyModuleViewController.m in Sources */,
+				4702CAA51CDB98B200DFDE2C /* AppDelegate.m in Sources */,
+				4702CB3E1CDB9E1100DFDE2C /* RainView.m in Sources */,
+				4702CAA21CDB98B200DFDE2C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4702CAA91CDB98B200DFDE2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4702CAAA1CDB98B200DFDE2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4702CAAE1CDB98B200DFDE2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4702CAAF1CDB98B200DFDE2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4702CAB21CDB98B200DFDE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4702CAB31CDB98B200DFDE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4702CAB51CDB98B200DFDE2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeatherKitchenDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = harly.kichen.com.WeatherKitchenDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4702CAB61CDB98B200DFDE2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeatherKitchenDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = harly.kichen.com.WeatherKitchenDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4702CA981CDB98B200DFDE2C /* Build configuration list for PBXProject "WeatherKitchenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4702CAB21CDB98B200DFDE2C /* Debug */,
+				4702CAB31CDB98B200DFDE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4702CAB41CDB98B200DFDE2C /* Build configuration list for PBXNativeTarget "WeatherKitchenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4702CAB51CDB98B200DFDE2C /* Debug */,
+				4702CAB61CDB98B200DFDE2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4702CA951CDB98B200DFDE2C /* Project object */;
+}

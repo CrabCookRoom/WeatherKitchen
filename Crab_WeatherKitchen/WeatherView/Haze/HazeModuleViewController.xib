@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HazeModuleViewController">
+            <connections>
+                <outlet property="hazeBg" destination="uVi-Lx-2JK" id="aGk-QR-m4r"/>
+                <outlet property="hazeView" destination="ysH-as-Tty" id="stn-jm-O4L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hazeBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-Lx-2JK">
+                    <rect key="frame" x="-200" y="0.0" width="1000" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysH-as-Tty" customClass="HazeView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ysH-as-Tty" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6ri-MO-aTg"/>
+                <constraint firstAttribute="trailing" secondItem="ysH-as-Tty" secondAttribute="trailing" id="BJ3-dO-Goy"/>
+                <constraint firstAttribute="bottom" secondItem="uVi-Lx-2JK" secondAttribute="bottom" id="Dw9-uJ-DIM"/>
+                <constraint firstItem="uVi-Lx-2JK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-200" id="Inr-nP-deq"/>
+                <constraint firstAttribute="trailing" secondItem="uVi-Lx-2JK" secondAttribute="trailing" constant="-200" id="QTQ-z1-bOy"/>
+                <constraint firstItem="uVi-Lx-2JK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XjL-hI-CvW"/>
+                <constraint firstItem="ysH-as-Tty" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="im1-Di-FMJ"/>
+                <constraint firstAttribute="bottom" secondItem="ysH-as-Tty" secondAttribute="bottom" id="yCr-gd-ydh"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="hazeBg.png" width="800" height="533"/>
+    </resources>
+</document>

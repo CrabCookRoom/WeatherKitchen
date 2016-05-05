@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RainModuleViewController">
+            <connections>
+                <outlet property="rainBgView" destination="66p-VB-mJZ" id="sje-Ok-oOT"/>
+                <outlet property="rainEmitterView" destination="C95-jT-eyf" id="yke-2J-DYi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rainBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="66p-VB-mJZ">
+                    <rect key="frame" x="-100" y="0.0" width="800" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C95-jT-eyf" customClass="RainView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C95-jT-eyf" secondAttribute="trailing" id="1q3-jV-Eey"/>
+                <constraint firstAttribute="trailing" secondItem="66p-VB-mJZ" secondAttribute="trailing" constant="-100" id="NEf-Fk-NNR"/>
+                <constraint firstItem="C95-jT-eyf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hTt-9D-cWr"/>
+                <constraint firstItem="C95-jT-eyf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jNS-qP-rP9"/>
+                <constraint firstItem="66p-VB-mJZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-100" id="mqo-kY-KA2"/>
+                <constraint firstItem="66p-VB-mJZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nBi-a3-UGZ"/>
+                <constraint firstAttribute="bottom" secondItem="66p-VB-mJZ" secondAttribute="bottom" id="ny0-tV-Hf1"/>
+                <constraint firstAttribute="bottom" secondItem="C95-jT-eyf" secondAttribute="bottom" id="tIh-GQ-hBF"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="rainBg.png" width="490" height="615"/>
+    </resources>
+</document>

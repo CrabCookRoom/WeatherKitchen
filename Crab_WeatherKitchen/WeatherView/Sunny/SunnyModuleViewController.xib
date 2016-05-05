@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SunnyModuleViewController">
+            <connections>
+                <outlet property="sunnyBgVIew" destination="TxW-wl-epq" id="vhF-em-BBC"/>
+                <outlet property="sunnyCloudView" destination="wnw-F2-eUY" id="gFy-Ws-G6i"/>
+                <outlet property="sunnyLightView" destination="lsR-UP-MxN" id="8bG-23-oOD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunnyBg.png" translatesAutoresizingMaskIntoConstraints="NO" id="TxW-wl-epq">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunnyCloud.png" translatesAutoresizingMaskIntoConstraints="NO" id="wnw-F2-eUY">
+                    <rect key="frame" x="-200" y="200" width="1000" height="400"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sunLight.png" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-UP-MxN">
+                    <rect key="frame" x="-576" y="-320" width="801" height="550"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TxW-wl-epq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Pe-Bw-oJy"/>
+                <constraint firstItem="wnw-F2-eUY" firstAttribute="top" secondItem="TxW-wl-epq" secondAttribute="top" id="6bk-Im-8Sx"/>
+                <constraint firstItem="TxW-wl-epq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B7h-SB-wR1"/>
+                <constraint firstItem="lsR-UP-MxN" firstAttribute="top" secondItem="TxW-wl-epq" secondAttribute="top" constant="-320" id="EXr-7z-OPd"/>
+                <constraint firstItem="lsR-UP-MxN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-320" id="HaN-Uc-wjG"/>
+                <constraint firstItem="wnw-F2-eUY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-200" id="Lb2-rV-6SB"/>
+                <constraint firstAttribute="trailing" secondItem="lsR-UP-MxN" secondAttribute="trailing" constant="375" id="QjK-vy-N1c"/>
+                <constraint firstItem="wnw-F2-eUY" firstAttribute="leading" secondItem="TxW-wl-epq" secondAttribute="leading" id="Qwz-te-dbN"/>
+                <constraint firstItem="wnw-F2-eUY" firstAttribute="trailing" secondItem="TxW-wl-epq" secondAttribute="trailing" id="TXz-c7-QW3"/>
+                <constraint firstAttribute="bottom" secondItem="TxW-wl-epq" secondAttribute="bottom" id="cd1-V8-8Um"/>
+                <constraint firstItem="wnw-F2-eUY" firstAttribute="bottom" secondItem="TxW-wl-epq" secondAttribute="bottom" id="dNM-vU-dcU"/>
+                <constraint firstAttribute="trailing" secondItem="wnw-F2-eUY" secondAttribute="trailing" constant="-200" id="jrq-rn-eb4"/>
+                <constraint firstAttribute="bottom" secondItem="wnw-F2-eUY" secondAttribute="bottom" id="kTy-sj-rsi"/>
+                <constraint firstItem="wnw-F2-eUY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="qh6-2u-d8g"/>
+                <constraint firstAttribute="trailing" secondItem="TxW-wl-epq" secondAttribute="trailing" id="rSk-7v-AJa"/>
+                <constraint firstItem="lsR-UP-MxN" firstAttribute="trailing" secondItem="TxW-wl-epq" secondAttribute="trailing" constant="375" id="yBl-PA-jVs"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6bk-Im-8Sx"/>
+                    <exclude reference="Qwz-te-dbN"/>
+                    <exclude reference="TXz-c7-QW3"/>
+                    <exclude reference="dNM-vU-dcU"/>
+                    <exclude reference="HaN-Uc-wjG"/>
+                    <exclude reference="QjK-vy-N1c"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="sunLight.png" width="801" height="550"/>
+        <image name="sunnyBg.png" width="750" height="1334"/>
+        <image name="sunnyCloud.png" width="2480" height="1394"/>
+    </resources>
+</document>
